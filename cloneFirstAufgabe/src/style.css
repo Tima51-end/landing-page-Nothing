@@ -1,3 +1,62 @@
 body {
   margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #444; /* Серый фон для всего сайта */
+}
+
+.nav {
+  background-color: #fff; /* Белый фон для контейнера */
+  margin: 0 auto; /* Центрируем на странице */
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 50px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  column-gap: 20px;
+}
+
+.list-item {
+  margin-left: 10px;
+}
+
+.list-link {
+  padding: 10px 0;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease; /* Плавный переход для цвета текста при наведении */
+}
+
+.list-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background-color: #00acdc;
+  transition: width 0.3s ease;
+}
+
+.list-link:hover::after {
+  width: 100%;
+}
+
+.list-link:hover {
+  color: #00acdc;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ff57d8;
 }
