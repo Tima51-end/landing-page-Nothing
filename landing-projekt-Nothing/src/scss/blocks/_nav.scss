@@ -1,0 +1,21 @@
+.nav {
+    padding-inline: 20px;
+
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #292929;
+        font-style: 22px;
+        line-height: 22px;
+        letter-spacing: 2px;
+    }
+
+    &__text {
+        padding-top: 32px ;
+        margin: 0;
+    }
+}
