@@ -1,0 +1,33 @@
+@mixin onTablet {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin paddingIline() {
+    & {
+      padding-inline: 20px;
+    }
+
+    @include onTablet() {
+        padding-inline: 72px;
+      }
+}
+
+@mixin iconsGap () {
+  gap: 24px;
+
+  @include onTablet() {
+    gap: 32px;
+  }
+}
+
+@mixin iconsSize () {
+  width: 24px;
+  height: 24px;
+
+  @include onTablet() {
+    height: 32px;
+    width: 32px;
+  }
+}

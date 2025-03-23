@@ -1,5 +1,12 @@
+@use '../variables' as *;
+
 .icons {
   display: flex;
   align-items: center;
-  gap: 24px;
+  @include iconsGap;
+
+  &__item {
+    @include iconsSize;
+  }
+
 }

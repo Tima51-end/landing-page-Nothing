@@ -1,8 +1,19 @@
+@use '../variables' as *;
+
 .top-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 28px 20px;
+  & {
+    padding-block: 28px ;
+  }
+
+  @include paddingIline;
+
+  
+  @include onTablet() {
+    padding-block: 36px; 
+  }
 }
   

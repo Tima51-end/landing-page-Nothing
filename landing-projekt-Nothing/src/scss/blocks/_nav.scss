@@ -1,5 +1,7 @@
+@use '../variables' as *;
+
 .nav {
-    padding-inline: 20px;
+    @include paddingIline;
 
     &__list {
         list-style: none;

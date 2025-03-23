@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .menu {
     background-color: #E5E6E8;
     height: 100vh;
@@ -12,12 +14,21 @@
     pointer-events: none;
     transition: opacity 0.5s ease;
 
-
+    &:target {
+        opacity: 1; // Показываем меню, когда #menu активно
+        pointer-events: auto; // Разрешаем взаимодействие
+      }
 
 
     &__bottom {
-        padding-inline: 20px;
-        margin-top: 48px;
+
+        & {
+            margin-top: 48px;
+        }
+
+        @include paddingIline;
+
+        
     }
 
     &_link {
@@ -33,7 +44,4 @@
     }
 }
 
-.menu:target {
-    opacity: 1; // Показываем меню, когда #menu активно
-    pointer-events: auto; // Разрешаем взаимодействие
-  }
+
